@@ -7,17 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CC5826B2260AC8600861293 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5826A2260AC8600861293 /* User.swift */; };
+		9CC5826D2260ADDC00861293 /* HomePageComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5826C2260ADDC00861293 /* HomePageComponents.swift */; };
+		9CC5826F2260AFB200861293 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5826E2260AFB200861293 /* Service.swift */; };
+		9CC582712262018900861293 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC582702262018900861293 /* Repo.swift */; };
+		9CC582732262292300861293 /* UserReposController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC582722262292300861293 /* UserReposController.swift */; };
+		9CC582772263596500861293 /* RepoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC582762263596500861293 /* RepoTableCell.swift */; };
+		9CC5827922636A7C00861293 /* RepoTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5827822636A7C00861293 /* RepoTitleLabel.swift */; };
+		9CC5827B2263C8F500861293 /* PushViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5827A2263C8F500861293 /* PushViewDelegate.swift */; };
+		9CC5827E2263E8BB00861293 /* GitTheUserButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5827D2263E8BB00861293 /* GitTheUserButton.swift */; };
+		9CC582802263E8ED00861293 /* MainTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5827F2263E8ED00861293 /* MainTitle.swift */; };
+		9CC5828322648BF300861293 /* RepoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5828222648BF300861293 /* RepoTableView.swift */; };
+		9CC582852264964F00861293 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC582842264964F00861293 /* File.swift */; };
+		9CC5828722649BB700861293 /* RepoContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5828622649BB700861293 /* RepoContentController.swift */; };
 		9CF8D1DE225F9239008F88CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1DD225F9239008F88CD /* AppDelegate.swift */; };
-		9CF8D1E0225F9239008F88CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1DF225F9239008F88CD /* ViewController.swift */; };
+		9CF8D1E0225F9239008F88CD /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1DF225F9239008F88CD /* HomePageController.swift */; };
 		9CF8D1E3225F9239008F88CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1E1225F9239008F88CD /* Main.storyboard */; };
 		9CF8D1E5225F923D008F88CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1E4225F923D008F88CD /* Assets.xcassets */; };
 		9CF8D1E8225F923D008F88CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1E6225F923D008F88CD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CC5826A2260AC8600861293 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9CC5826C2260ADDC00861293 /* HomePageComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageComponents.swift; sourceTree = "<group>"; };
+		9CC5826E2260AFB200861293 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		9CC582702262018900861293 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		9CC582722262292300861293 /* UserReposController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReposController.swift; sourceTree = "<group>"; };
+		9CC582762263596500861293 /* RepoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableCell.swift; sourceTree = "<group>"; };
+		9CC5827822636A7C00861293 /* RepoTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTitleLabel.swift; sourceTree = "<group>"; };
+		9CC5827A2263C8F500861293 /* PushViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewDelegate.swift; sourceTree = "<group>"; };
+		9CC5827D2263E8BB00861293 /* GitTheUserButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTheUserButton.swift; sourceTree = "<group>"; };
+		9CC5827F2263E8ED00861293 /* MainTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitle.swift; sourceTree = "<group>"; };
+		9CC5828222648BF300861293 /* RepoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableView.swift; sourceTree = "<group>"; };
+		9CC582842264964F00861293 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		9CC5828622649BB700861293 /* RepoContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoContentController.swift; sourceTree = "<group>"; };
 		9CF8D1DA225F9239008F88CD /* GitTheUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTheUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8D1DD225F9239008F88CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CF8D1DF225F9239008F88CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CF8D1DF225F9239008F88CD /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
 		9CF8D1E2225F9239008F88CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CF8D1E4225F923D008F88CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF8D1E7225F923D008F88CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +61,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CC5827C2263E8A400861293 /* HomePageCpomnonets */ = {
+			isa = PBXGroup;
+			children = (
+				9CC5826C2260ADDC00861293 /* HomePageComponents.swift */,
+				9CC5827F2263E8ED00861293 /* MainTitle.swift */,
+				9CC5827D2263E8BB00861293 /* GitTheUserButton.swift */,
+			);
+			path = HomePageCpomnonets;
+			sourceTree = "<group>";
+		};
+		9CC582812263E99400861293 /* UserReposComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9CC582762263596500861293 /* RepoTableCell.swift */,
+				9CC5827822636A7C00861293 /* RepoTitleLabel.swift */,
+				9CC5828222648BF300861293 /* RepoTableView.swift */,
+			);
+			path = UserReposComponents;
+			sourceTree = "<group>";
+		};
 		9CF8D1D1225F9239008F88CD = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +101,46 @@
 			isa = PBXGroup;
 			children = (
 				9CF8D1DD225F9239008F88CD /* AppDelegate.swift */,
-				9CF8D1DF225F9239008F88CD /* ViewController.swift */,
+				9CC5826E2260AFB200861293 /* Service.swift */,
+				9CF8D1EF225F9277008F88CD /* Model */,
+				9CF8D1F1225F927E008F88CD /* Controller */,
+				9CF8D1F0225F927A008F88CD /* View */,
 				9CF8D1E1225F9239008F88CD /* Main.storyboard */,
 				9CF8D1E4225F923D008F88CD /* Assets.xcassets */,
 				9CF8D1E6225F923D008F88CD /* LaunchScreen.storyboard */,
 				9CF8D1E9225F923D008F88CD /* Info.plist */,
 			);
 			path = GitTheUser;
+			sourceTree = "<group>";
+		};
+		9CF8D1EF225F9277008F88CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CC5826A2260AC8600861293 /* User.swift */,
+				9CC582702262018900861293 /* Repo.swift */,
+				9CC582842264964F00861293 /* File.swift */,
+				9CC5827A2263C8F500861293 /* PushViewDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CF8D1F0225F927A008F88CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CC5827C2263E8A400861293 /* HomePageCpomnonets */,
+				9CC582812263E99400861293 /* UserReposComponents */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CF8D1F1225F927E008F88CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9CF8D1DF225F9239008F88CD /* HomePageController.swift */,
+				9CC582722262292300861293 /* UserReposController.swift */,
+				9CC5828622649BB700861293 /* RepoContentController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +214,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF8D1E0225F9239008F88CD /* ViewController.swift in Sources */,
+				9CC5826D2260ADDC00861293 /* HomePageComponents.swift in Sources */,
+				9CC5827E2263E8BB00861293 /* GitTheUserButton.swift in Sources */,
+				9CC5827922636A7C00861293 /* RepoTitleLabel.swift in Sources */,
+				9CC582772263596500861293 /* RepoTableCell.swift in Sources */,
+				9CC5827B2263C8F500861293 /* PushViewDelegate.swift in Sources */,
+				9CF8D1E0225F9239008F88CD /* HomePageController.swift in Sources */,
+				9CC5828322648BF300861293 /* RepoTableView.swift in Sources */,
+				9CC5826F2260AFB200861293 /* Service.swift in Sources */,
+				9CC582712262018900861293 /* Repo.swift in Sources */,
+				9CC582852264964F00861293 /* File.swift in Sources */,
 				9CF8D1DE225F9239008F88CD /* AppDelegate.swift in Sources */,
+				9CC582802263E8ED00861293 /* MainTitle.swift in Sources */,
+				9CC5826B2260AC8600861293 /* User.swift in Sources */,
+				9CC582732262292300861293 /* UserReposController.swift in Sources */,
+				9CC5828722649BB700861293 /* RepoContentController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWBFK5RYYV;
 				INFOPLIST_FILE = GitTheUser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWBFK5RYYV;
 				INFOPLIST_FILE = GitTheUser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
