@@ -12,3 +12,7 @@ import UIKit
 protocol PushViewDelegate: class {
     func didTapButton(ViewToPresent: UIViewController)
 }
+
+protocol ChangeValidUserDelegate: class {
+    func changeValidUser(boolean: Bool)
+}

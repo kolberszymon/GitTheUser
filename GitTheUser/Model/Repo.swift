@@ -13,6 +13,7 @@ struct Repo: Decodable {
     let name: String?
     let message: String?
     let language: String?
-    
+    let owner: Owner?
+    var files: [File]?
     
 }

@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Owner.swift
 //  GitTheUser
 //
 //  Created by Dominik Kolber on 4/15/19.
@@ -8,13 +8,8 @@
 
 import Foundation
 
-struct File: Decodable {
+struct Owner: Decodable {
     
-    let name: String?
-    let type: String?
-    let content: String?
-    let path: String?
+    let login: String?
     
 }
-
-

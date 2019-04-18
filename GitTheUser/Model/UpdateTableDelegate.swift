@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  UpdateTableDelegate.swift
 //  GitTheUser
 //
 //  Created by Dominik Kolber on 4/15/19.
@@ -8,13 +8,6 @@
 
 import Foundation
 
-struct File: Decodable {
-    
-    let name: String?
-    let type: String?
-    let content: String?
-    let path: String?
-    
+protocol UpdateTableDelegate {
+    func updateTable(repo: Repo)
 }
-
-

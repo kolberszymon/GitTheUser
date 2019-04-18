@@ -8,12 +8,14 @@
 
 import UIKit
 
-class HomePageController: UIViewController, PushViewDelegate {
+class HomePageController: UIViewController, PushViewDelegate, ChangeValidUserDelegate {
     
     //MARK: --Declaring components
     
     let mainTitle = MainTitle(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     let gitTheUserButton = GitTheUserButton(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+    let userNotFoundView = UserNotFoundView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+    var validUser: Bool = true
     
     //MARK: --Initializing
     //Also UX handling
@@ -27,6 +29,7 @@ class HomePageController: UIViewController, PushViewDelegate {
         
         //delegating self in order to send view to present next
         gitTheUserButton.delegate = self
+        gitTheUserButton.validUserDelegate = self
     }
     
     @objc func dismissKeyboard() {
@@ -34,9 +37,24 @@ class HomePageController: UIViewController, PushViewDelegate {
         view.endEditing(true)
     }
     
+    //MARK: --Custom protocols function
+    
     func didTapButton(ViewToPresent: UIViewController) {
         self.navigationController?.pushViewController(ViewToPresent, animated: true)
     }
+    
+    func changeValidUser(boolean: Bool) {
+        self.userNotFoundView.isHidden = boolean
+        UIView.animate(withDuration: 0.1, animations: {
+            self.userNotFoundView.frame.origin.x -= 10
+        }) { (_) in
+            UIView.animate(withDuration: 0.1, animations: {
+                self.userNotFoundView.frame.origin.x += 10
+            })
+        }
+    }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -46,6 +64,11 @@ class HomePageController: UIViewController, PushViewDelegate {
         view.addSubview(mainTitle)
         view.addSubview(userInput)
         view.addSubview(gitTheUserButton)
+        view.addSubview(userNotFoundView)
+        
+        if validUser {
+            userNotFoundView.isHidden = true
+        }
         
         setUpThings()
     }
@@ -53,6 +76,7 @@ class HomePageController: UIViewController, PushViewDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+        validUser = true
     }
     
     func setUpThings() {
@@ -76,6 +100,9 @@ class HomePageController: UIViewController, PushViewDelegate {
         gitTheUserButton.heightAnchor.constraint(equalToConstant: 41).isActive = true
         gitTheUserButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         gitTheUserButton.widthAnchor.constraint(equalToConstant: 237).isActive = true
+        
+        userNotFoundView.topAnchor.constraint(equalTo: userInput.bottomAnchor, constant: 10).isActive = true
+        userNotFoundView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
     }
     

@@ -11,6 +11,7 @@ import UIKit
 class GitTheUserButton: UIButton {
     
     weak var delegate: PushViewDelegate?
+    weak var validUserDelegate: ChangeValidUserDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -47,8 +48,6 @@ class GitTheUserButton: UIButton {
             do {
                 //You have to enclose Repo in [] if the object is returning an array as the root
                 user.repositories = try JSONDecoder().decode([Repo].self, from: data)
-                print(user.repositories)
-                print(user.name)
                 let userReposVC = UserReposController()
                 userReposVC.user = user
                 DispatchQueue.main.async(execute: {
@@ -59,6 +58,10 @@ class GitTheUserButton: UIButton {
                 //If it could not be decoded it means that we got a message back that there is no such user
                 //So here present 404 view
                 print("User not found")
+                DispatchQueue.main.async(execute: {
+                    self.validUserDelegate?.changeValidUser(boolean: false)
+                })
+                
             }
             }.resume()
         

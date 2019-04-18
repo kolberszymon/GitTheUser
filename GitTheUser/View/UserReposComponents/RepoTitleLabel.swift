@@ -8,7 +8,7 @@
 
 import UIKit
 
-let gitProfLabel : UILabel = {
+let gitProfLabel: UILabel = {
     
     let label = UILabel()
     label.textColor = darkPurple
@@ -18,11 +18,22 @@ let gitProfLabel : UILabel = {
     
 }()
 
-let gitProfUnderLabel : UILabel = {
+let gitProfUnderLabel: UILabel = {
    
     let label = UILabel()
     label.textColor = lightPurple
     label.text = "git profile"
+    label.font = UIFont.systemFont(ofSize: 15)
+    label.translatesAutoresizingMaskIntoConstraints = false
+    return label
+    
+}()
+
+let gitRepoUnderLabel: UILabel = {
+   
+    let label = UILabel()
+    label.textColor = lightPurple
+    label.text = "git repo"
     label.font = UIFont.systemFont(ofSize: 15)
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
