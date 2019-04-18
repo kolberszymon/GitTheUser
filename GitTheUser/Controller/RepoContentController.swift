@@ -64,14 +64,41 @@ class RepoContentController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let repo = repo else { return }
         guard let files = repo.files else { return }
-        let file = files[indexPath.row]
-        print(file.path)
+        var file = files[indexPath.row]
+        let urlString = "https://api.github.com/repos/\(repo.owner!.login!)/\(repo.name!)/contents/\(file.path!)"
+        let url = URL(string: urlString)
         if (file.type! == "dir") {
             //Downloading folder content and presenting next view
+            URLSession.shared.dataTask(with: url!) { (data, response, err) in
+                if let err = err {
+                    print(err)
+                    return
+                }
+                
+                guard let data = data else { return }
+                
+                do {
+                    file.files = try JSONDecoder().decode([File].self, from: data)
+                    DispatchQueue.main.async(execute: {
+                        var newRepo = repo
+                        newRepo.files = file.files
+                        newRepo.files?.sort(by: { (file1, file2) -> Bool in
+                            return file2.type! as String > file1.type! as String
+                        })
+                        let newRepoVC = RepoContentController()
+                        newRepoVC.repo = newRepo
+                        self.navigationController?.pushViewController(newRepoVC, animated: true)
+                    })
+                } catch {
+                    
+                }
+            }.resume()
             
         } else if (file.type! == "file") {
             //Presenting file content
-            print("File")
+            print(urlString)
+            let textFileView = TextFileView()
+            textFileView.showTextView()
         }
     }
     

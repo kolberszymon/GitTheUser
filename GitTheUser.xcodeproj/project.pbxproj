@@ -25,6 +25,7 @@
 		9CC5828E22652CFB00861293 /* UpdateTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5828D22652CFB00861293 /* UpdateTableDelegate.swift */; };
 		9CC582902265334000861293 /* RepoContentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5828F2265334000861293 /* RepoContentTableCell.swift */; };
 		9CC5829222688DC000861293 /* UserNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5829122688DC000861293 /* UserNotFoundView.swift */; };
+		9CC582942269300000861293 /* TextFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC582932269300000861293 /* TextFileView.swift */; };
 		9CF8D1DE225F9239008F88CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1DD225F9239008F88CD /* AppDelegate.swift */; };
 		9CF8D1E0225F9239008F88CD /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1DF225F9239008F88CD /* HomePageController.swift */; };
 		9CF8D1E3225F9239008F88CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1E1225F9239008F88CD /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		9CC5828D22652CFB00861293 /* UpdateTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTableDelegate.swift; sourceTree = "<group>"; };
 		9CC5828F2265334000861293 /* RepoContentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoContentTableCell.swift; sourceTree = "<group>"; };
 		9CC5829122688DC000861293 /* UserNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotFoundView.swift; sourceTree = "<group>"; };
+		9CC582932269300000861293 /* TextFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileView.swift; sourceTree = "<group>"; };
 		9CF8D1DA225F9239008F88CD /* GitTheUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTheUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8D1DD225F9239008F88CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF8D1DF225F9239008F88CD /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				9CC582892264D53900861293 /* RepoContentDataSource.swift */,
+				9CC582932269300000861293 /* TextFileView.swift */,
 				9CC5828F2265334000861293 /* RepoContentTableCell.swift */,
 			);
 			path = RepoContentComponents;
@@ -248,6 +251,7 @@
 				9CC582902265334000861293 /* RepoContentTableCell.swift in Sources */,
 				9CC5826F2260AFB200861293 /* Service.swift in Sources */,
 				9CC582712262018900861293 /* Repo.swift in Sources */,
+				9CC582942269300000861293 /* TextFileView.swift in Sources */,
 				9CC5828A2264D53A00861293 /* RepoContentDataSource.swift in Sources */,
 				9CC5829222688DC000861293 /* UserNotFoundView.swift in Sources */,
 				9CC582852264964F00861293 /* File.swift in Sources */,

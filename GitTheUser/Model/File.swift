@@ -14,7 +14,7 @@ struct File: Decodable {
     let type: String?
     let content: String?
     let path: String?
-    
+    var files: [File]?
 }
 
 
