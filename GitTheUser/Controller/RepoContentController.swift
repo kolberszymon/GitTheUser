@@ -13,6 +13,7 @@ class RepoContentController: UIViewController, UITableViewDelegate {
     var repo: Repo?
     var repoContentTableView: UITableView!
     let dataSource = RepoContentDataSource()
+    var textFileView = TextFileView(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,8 +97,34 @@ class RepoContentController: UIViewController, UITableViewDelegate {
             
         } else if (file.type! == "file") {
             //Presenting file content
-            print(urlString)
-            let textFileView = TextFileView()
+            
+            URLSession.shared.dataTask(with: url!) { (data, response, err) in
+                
+                if let err = err {
+                    print(err)
+                    return
+                }
+                
+                guard let data = data else { return }
+                
+                do {
+                    let fileContent = try JSONDecoder().decode(FileContent.self, from: data)
+                    DispatchQueue.main.async(execute: {
+                        guard let encoding = fileContent.encoding else { return }
+                        print(fileContent)
+                        if encoding == "base64" {
+                            guard let content = fileContent.content else { return }
+                            var decodedString = splitBase64IntoLines(base64String: content)
+                            print(decodedString)
+                            self.textFileView.textContentView.text = decodedString
+                        }
+                    })
+                } catch {
+                    print("Something went wrong")
+                }
+            }.resume()
+            
+            textFileView.fileNameLabel.text = file.name
             textFileView.showTextView()
         }
     }
