@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Highlightr
 
 class RepoContentController: UIViewController, UITableViewDelegate {
     
@@ -68,6 +69,7 @@ class RepoContentController: UIViewController, UITableViewDelegate {
         var file = files[indexPath.row]
         let urlString = "https://api.github.com/repos/\(repo.owner!.login!)/\(repo.name!)/contents/\(file.path!)"
         let url = URL(string: urlString)
+        
         if (file.type! == "dir") {
             //Downloading folder content and presenting next view
             URLSession.shared.dataTask(with: url!) { (data, response, err) in
@@ -110,13 +112,12 @@ class RepoContentController: UIViewController, UITableViewDelegate {
                 do {
                     let fileContent = try JSONDecoder().decode(FileContent.self, from: data)
                     DispatchQueue.main.async(execute: {
-                        guard let encoding = fileContent.encoding else { return }
-                        print(fileContent)
-                        if encoding == "base64" {
+                        if file.size! < 300000{
                             guard let content = fileContent.content else { return }
                             let decodedString = splitBase64IntoLines(base64String: content)
-                            print(decodedString)
-                            self.textFileView.textContentView.text = decodedString
+                            self.textFileView.textContentView.attributedText = higlightDecodedString(string: decodedString, lang: repo.language!)
+                        } else {
+                            self.textFileView.textContentView.text = "File is too big."
                         }
                     })
                 } catch {

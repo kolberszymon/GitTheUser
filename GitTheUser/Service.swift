@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Highlightr
 
 //Main colors of design
 
@@ -36,4 +37,11 @@ func splitBase64IntoLines(base64String: String) -> String {
     }
     let decodedString = linesDecoded.joined()
     return decodedString
+}
+
+func higlightDecodedString(string: String, lang: String) -> NSAttributedString? {
+    let highlightr = Highlightr()
+    highlightr?.setTheme(to: "paraiso-dark")
+    let highLightedCode = highlightr?.highlight(string, as: lang, fastRender: true)
+    return highLightedCode
 }
