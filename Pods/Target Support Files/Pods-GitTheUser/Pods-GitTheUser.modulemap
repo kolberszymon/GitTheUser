@@ -1,4 +1,4 @@
-framework module Pods_GitTheUser {
+module Pods_GitTheUser {
   umbrella header "Pods-GitTheUser-umbrella.h"
 
   export *

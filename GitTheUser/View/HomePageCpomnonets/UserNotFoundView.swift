@@ -32,6 +32,7 @@ class UserNotFoundView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        accessibilityIdentifier = "userNotFoundView"
         translatesAutoresizingMaskIntoConstraints = false
     
         addSubview(textInfoLabel)
