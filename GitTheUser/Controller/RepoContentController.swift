@@ -114,7 +114,7 @@ class RepoContentController: UIViewController, UITableViewDelegate {
                         print(fileContent)
                         if encoding == "base64" {
                             guard let content = fileContent.content else { return }
-                            var decodedString = splitBase64IntoLines(base64String: content)
+                            let decodedString = splitBase64IntoLines(base64String: content)
                             print(decodedString)
                             self.textFileView.textContentView.text = decodedString
                         }

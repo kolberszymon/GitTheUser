@@ -28,12 +28,31 @@
 		9CC582942269300000861293 /* TextFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC582932269300000861293 /* TextFileView.swift */; };
 		9CC58296226B72EF00861293 /* HideViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC58295226B72EF00861293 /* HideViewDelegate.swift */; };
 		9CC58298226B830700861293 /* FileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC58297226B830700861293 /* FileContent.swift */; };
+		9CC582D0226C952100861293 /* GitTheUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC582CF226C952100861293 /* GitTheUserTests.swift */; };
+		9CC582DE226C9BAB00861293 /* GitTheUserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC582DD226C9BAB00861293 /* GitTheUserUITests.swift */; };
 		9CF8D1DE225F9239008F88CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1DD225F9239008F88CD /* AppDelegate.swift */; };
 		9CF8D1E0225F9239008F88CD /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1DF225F9239008F88CD /* HomePageController.swift */; };
 		9CF8D1E3225F9239008F88CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1E1225F9239008F88CD /* Main.storyboard */; };
 		9CF8D1E5225F923D008F88CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1E4225F923D008F88CD /* Assets.xcassets */; };
 		9CF8D1E8225F923D008F88CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1E6225F923D008F88CD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CC582D2226C952100861293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CF8D1D2225F9239008F88CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CF8D1D9225F9239008F88CD;
+			remoteInfo = GitTheUser;
+		};
+		9CC582E0226C9BAB00861293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CF8D1D2225F9239008F88CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CF8D1D9225F9239008F88CD;
+			remoteInfo = GitTheUser;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9CC5826A2260AC8600861293 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -57,6 +76,12 @@
 		9CC582932269300000861293 /* TextFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileView.swift; sourceTree = "<group>"; };
 		9CC58295226B72EF00861293 /* HideViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideViewDelegate.swift; sourceTree = "<group>"; };
 		9CC58297226B830700861293 /* FileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileContent.swift; sourceTree = "<group>"; };
+		9CC582CD226C952100861293 /* GitTheUserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitTheUserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC582CF226C952100861293 /* GitTheUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTheUserTests.swift; sourceTree = "<group>"; };
+		9CC582D1226C952100861293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC582DB226C9BAB00861293 /* GitTheUserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitTheUserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC582DD226C9BAB00861293 /* GitTheUserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTheUserUITests.swift; sourceTree = "<group>"; };
+		9CC582DF226C9BAB00861293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8D1DA225F9239008F88CD /* GitTheUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTheUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8D1DD225F9239008F88CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF8D1DF225F9239008F88CD /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
@@ -67,6 +92,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9CC582CA226C952100861293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC582D8226C9BAB00861293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CF8D1D7225F9239008F88CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,10 +147,30 @@
 			path = RepoContentComponents;
 			sourceTree = "<group>";
 		};
+		9CC582CE226C952100861293 /* GitTheUserTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CC582CF226C952100861293 /* GitTheUserTests.swift */,
+				9CC582D1226C952100861293 /* Info.plist */,
+			);
+			path = GitTheUserTests;
+			sourceTree = "<group>";
+		};
+		9CC582DC226C9BAB00861293 /* GitTheUserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CC582DD226C9BAB00861293 /* GitTheUserUITests.swift */,
+				9CC582DF226C9BAB00861293 /* Info.plist */,
+			);
+			path = GitTheUserUITests;
+			sourceTree = "<group>";
+		};
 		9CF8D1D1225F9239008F88CD = {
 			isa = PBXGroup;
 			children = (
 				9CF8D1DC225F9239008F88CD /* GitTheUser */,
+				9CC582CE226C952100861293 /* GitTheUserTests */,
+				9CC582DC226C9BAB00861293 /* GitTheUserUITests */,
 				9CF8D1DB225F9239008F88CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				9CF8D1DA225F9239008F88CD /* GitTheUser.app */,
+				9CC582CD226C952100861293 /* GitTheUserTests.xctest */,
+				9CC582DB226C9BAB00861293 /* GitTheUserUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +239,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9CC582CC226C952100861293 /* GitTheUserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CC582D6226C952100861293 /* Build configuration list for PBXNativeTarget "GitTheUserTests" */;
+			buildPhases = (
+				9CC582C9226C952100861293 /* Sources */,
+				9CC582CA226C952100861293 /* Frameworks */,
+				9CC582CB226C952100861293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CC582D3226C952100861293 /* PBXTargetDependency */,
+			);
+			name = GitTheUserTests;
+			productName = GitTheUserTests;
+			productReference = 9CC582CD226C952100861293 /* GitTheUserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CC582DA226C9BAB00861293 /* GitTheUserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CC582E2226C9BAB00861293 /* Build configuration list for PBXNativeTarget "GitTheUserUITests" */;
+			buildPhases = (
+				9CC582D7226C9BAB00861293 /* Sources */,
+				9CC582D8226C9BAB00861293 /* Frameworks */,
+				9CC582D9226C9BAB00861293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CC582E1226C9BAB00861293 /* PBXTargetDependency */,
+			);
+			name = GitTheUserUITests;
+			productName = GitTheUserUITests;
+			productReference = 9CC582DB226C9BAB00861293 /* GitTheUserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9CF8D1D9225F9239008F88CD /* GitTheUser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CF8D1EC225F923D008F88CD /* Build configuration list for PBXNativeTarget "GitTheUser" */;
@@ -205,6 +302,14 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Szymon Kolber";
 				TargetAttributes = {
+					9CC582CC226C952100861293 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9CF8D1D9225F9239008F88CD;
+					};
+					9CC582DA226C9BAB00861293 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9CF8D1D9225F9239008F88CD;
+					};
 					9CF8D1D9225F9239008F88CD = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -224,11 +329,27 @@
 			projectRoot = "";
 			targets = (
 				9CF8D1D9225F9239008F88CD /* GitTheUser */,
+				9CC582CC226C952100861293 /* GitTheUserTests */,
+				9CC582DA226C9BAB00861293 /* GitTheUserUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9CC582CB226C952100861293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC582D9226C9BAB00861293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CF8D1D8225F9239008F88CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +363,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9CC582C9226C952100861293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC582D0226C952100861293 /* GitTheUserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC582D7226C9BAB00861293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC582DE226C9BAB00861293 /* GitTheUserUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CF8D1D6225F9239008F88CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +411,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9CC582D3226C952100861293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CF8D1D9225F9239008F88CD /* GitTheUser */;
+			targetProxy = 9CC582D2226C952100861293 /* PBXContainerItemProxy */;
+		};
+		9CC582E1226C9BAB00861293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CF8D1D9225F9239008F88CD /* GitTheUser */;
+			targetProxy = 9CC582E0226C9BAB00861293 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		9CF8D1E1225F9239008F88CD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -294,6 +444,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9CC582D4226C952100861293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWBFK5RYYV;
+				INFOPLIST_FILE = GitTheUserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DominikKolber.GitTheUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitTheUser.app/GitTheUser";
+			};
+			name = Debug;
+		};
+		9CC582D5226C952100861293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWBFK5RYYV;
+				INFOPLIST_FILE = GitTheUserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DominikKolber.GitTheUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitTheUser.app/GitTheUser";
+			};
+			name = Release;
+		};
+		9CC582E3226C9BAB00861293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWBFK5RYYV;
+				INFOPLIST_FILE = GitTheUserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DominikKolber.GitTheUserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GitTheUser;
+			};
+			name = Debug;
+		};
+		9CC582E4226C9BAB00861293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWBFK5RYYV;
+				INFOPLIST_FILE = GitTheUserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DominikKolber.GitTheUserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GitTheUser;
+			};
+			name = Release;
+		};
 		9CF8D1EA225F923D008F88CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,6 +679,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9CC582D6226C952100861293 /* Build configuration list for PBXNativeTarget "GitTheUserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CC582D4226C952100861293 /* Debug */,
+				9CC582D5226C952100861293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CC582E2226C9BAB00861293 /* Build configuration list for PBXNativeTarget "GitTheUserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CC582E3226C9BAB00861293 /* Debug */,
+				9CC582E4226C9BAB00861293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9CF8D1D5225F9239008F88CD /* Build configuration list for PBXProject "GitTheUser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
